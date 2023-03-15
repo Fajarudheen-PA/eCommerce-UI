@@ -1,1 +1,2 @@
 # eCommerce-UI
+This project is a fully responsive eCommerce user interface (UI) built using HTML, SCSS, and JavaScript.  It also uses Bootstrap and Slick to make it more interactive. The UI includes a responsive navigation menu, product display section and a modal popup (while clicking on image tiles) to show product images in detail. The design is modern and visually appealing, with attention to detail on typography and layout. The UI is built with accessibility in mind and is optimized for fast loading times. The code is well-organized and easy to maintain.
