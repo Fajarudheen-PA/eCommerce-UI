@@ -1,0 +1,44 @@
+.item-count{
+    // background-color: $color-grey-2;
+    .counter_conatiner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // padding: 6px;
+        // margin-top: 1rem;
+        background-color: $color-grey;
+        min-width: 150px;
+        min-height: 45px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      span {
+        font-size: 18px;
+        background-color: $color-grey;
+        padding: 10px 0;
+        // margin-left: 16px;
+        // margin-right: 16px;
+        border-radius: 4px;
+        color: $color-black;
+        font-weight: $font-bold;
+        max-width: 15px;
+      }
+      button {
+        font-size: 20px;
+        transform: translateY(-2px);
+        padding: 3px;
+        font-weight: $font-bold;
+        cursor: pointer;
+        background-color: $color-grey;
+        color: $color-orange;
+        border: 0px;
+      }
+}
+
+@include mobile{
+  .item-count{
+    .counter_conatiner{
+      min-width: 200px
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.product-details{
+    background-color: $color-white;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: flex-start;
+        font-size: 16px;
+        margin: 20px 0;
+        &__p1 {
+            padding: 15px 0 20px 0;
+        }
+    }
+
+    &__orgheadings {
+        display: block;
+        font-size: $spacer-5;
+        letter-spacing: 1px;
+        margin-bottom: $spacer-2;
+    
+        &--main-head {
+            font-weight: $font-bold;
+            color: $color-black;
+        }
+    }
+
+    &__category-name{
+        color: $color-orange;
+        font-weight: $font-semi-bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+        margin-bottom: $spacer-3;
+    }
+    &__rate-section{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        &__offer{
+            display: flex;
+            justify-content: flex-start;
+            &__rate{
+                font-size: $spacer-4;
+                font-weight: $font-bold;
+                color: $color-black;
+            }
+            &__offer-tab{
+                display: inline;
+                max-width: 50px;
+                font-weight: $font-bold;
+                padding: $spacer-1;
+                margin-left: $spacer-2;
+                background-color: $color-light-orange;
+                color: $color-orange;
+                border-radius: 8px;
+            }
+        }
+        &__og-rate{
+            font-size: 14px;
+            color: $color-grey-2;
+            padding: $spacer-1 0;
+        }
+    }
+}
+
+.btn-div {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+    align-items: center;
+    margin: 0 (-$spacer-3);
+
+    &__btn-space {
+        margin: $spacer-3;
+    }
+}
+@include mobile{
+    .product-details{
+        &__rate-section{
+            flex-direction: row;
+            justify-content: space-between;
+            margin: unset;
+            &__og-rate{
+                margin-right: $spacer-3;
+            }
+        }
+    }
+    .btn-div {
+        justify-content: center;  //earlier space around
+    }
+}
+
+@include mobile-tablet {
+    .btn-div {
+        margin: 0 auto;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+@include tablet {
+    .btn-div {
+        margin: 0 (-$spacer-2);
+    }
+}
